@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>剪刀石頭布遊戲</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+
+<div id="game-container">
+  <h1>剪刀石頭布遊戲</h1>
+  <div class="buttons">
+    <img src="0.jpg" class="btn" alt="石頭" onclick="playGame('石頭')">
+    <img src="5.jpg" class="btn" alt="布" onclick="playGame('布')">
+    <img src="2.jpg" class="btn" alt="剪刀" onclick="playGame('剪刀')">
+  </div>
+  <div id="result" class="result"></div>
+  <div id="score">玩家：<span id="playerScore">0</span> 電腦：<span id="computerScore">0</span></div>
+</div>
+
+<!-- 引入 SweetAlert2 和 JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

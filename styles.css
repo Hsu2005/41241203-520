@@ -1,0 +1,48 @@
+/* 基本樣式設定 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#game-container {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.btn {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.result {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.win {
+  color: green;
+}
+
+.lose {
+  color: red;
+}
+
+.draw {
+  color: gray;
+}
